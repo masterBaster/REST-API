@@ -18,6 +18,10 @@ router.put('/drivers/:id', function(req, res, next){
 });
 //delete driver from the db
 router.delete('/drivers/:id', function(req, res, next){
+    Driver.findByIdAndRemove({_id: req.params.id}).then(function(dirver){
+        res.send(dirver);
+    })
+    console.log(req.params.id)
     res.send({type: 'DELETE'});
 });
 
