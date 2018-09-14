@@ -4,7 +4,9 @@ let Driver = require('../models/drivers');
 
 //get the list of dirvers from the db
 router.get('/drivers', function(req, res, next){
-    res.send({type: 'GET'});
+    Driver.find({}).then(function(drivers){
+        res.send(drivers);
+    })
 });
 //add a new driver to the db
 router.post('/drivers', function(req, res, next){

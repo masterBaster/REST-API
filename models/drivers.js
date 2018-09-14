@@ -1,5 +1,17 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+
+const Geo_Schema = new Schema({
+    type: {
+        type: String,
+        default: 'Point'
+    },
+    coordinates: {
+        type: [Number],
+        index: '2dsphere'
+    }
+}) 
+
 const Driver_Schema = new Schema({
     name: {
         type: String,
@@ -20,8 +32,8 @@ const Driver_Schema = new Schema({
     available: {
         type: Boolean,
         default: false
-    }
-    // add geo location...
+    },
+    geometry: Geo_Schema
 });
 
 const Driver = mongoose.model('dirver', Driver_Schema);

@@ -1,0 +1,35 @@
+{
+	"name": "Adam",
+	"surname": "Hallic",
+	"age": 56,
+	"drivers_license": 4323423,
+	"available": true,
+	"geometry": {"type": "Point", "coordinates": [-80, 25]}
+}
+
+{
+	"name": "Tom",
+	"surname": "James",
+	"age": 45,
+	"drivers_license": 45325221,
+	"available": true,
+	"geometry": {"type": "Point", "coordinates": [-80, 30]}
+}
+
+{
+	"name": "Tommy",
+	"surname": "Ames",
+	"age": 65,
+	"drivers_license": 45398921,
+	"available": true,
+	"geometry": {"type": "Point", "coordinates": [-80, 35]}
+}
+
+{
+	"name": "Miley",
+	"surname": "Samsy",
+	"age": 65,
+	"drivers_license": 45325221,
+	"available": true,
+	"geometry": {"type": "Point", "coordinates": [-80, 40]}
+}
